@@ -29,10 +29,7 @@ html {
     text-shadow: none;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+
 
 /*
  * A better looking default horizontal rule
@@ -208,10 +205,10 @@ textarea {
    }
    .free {
      margin-left: 240px;
-     position:r relative;
+     position: relative;
      overflow: hidden;
      padding: 15px;
-     z-index: -200;
+     z-index: -10;
    }
    .free h1 {
      text-align: center;
@@ -497,12 +494,7 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
    Print styles.
@@ -510,18 +502,6 @@ textarea {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
 
     a,
     a:visited {
@@ -581,4 +561,3 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
-}
